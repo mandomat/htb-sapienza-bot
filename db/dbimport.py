@@ -15,7 +15,7 @@ UNI_RANKS_URL="https://www.hackthebox.eu/home/universities/rankings"
 USER_URL = "https://www.hackthebox.eu/home/users/profile/"
 
 def main():
-    conn = sqlite3.connect('htb.db')
+    conn = sqlite3.connect('db/htb.db')
     c = conn.cursor()
     c.execute('CREATE TABLE IF NOT EXISTS users(id integer PRIMARY KEY, name text, rank text, respect text, points integer, completion real)')
     c.execute('CREATE TABLE IF NOT EXISTS  users_machines(name text, userid integer, user integer, root integer,FOREIGN KEY(userid) REFERENCES users(id))')
