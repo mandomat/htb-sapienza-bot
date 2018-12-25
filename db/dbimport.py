@@ -143,12 +143,12 @@ def check_request_success(page, url):
         return None
 
 def get_cookies():
-    with open("cookies","r") as f:
+    with open("db/cookies","r") as f:
         cookies = json.load(f)
     return cookies
 
 def save_cookies(new_cookies):
-    with open("cookies","w") as f:
+    with open("db/cookies","w") as f:
         json.dump(new_cookies,f)
     return
 
