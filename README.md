@@ -1,5 +1,6 @@
 # htb-sapienza-bot
 Python Telegram bot for the HackTheBox Sapienza team
+@HTB_sapienza_bot
 
 ## USAGE
 1. Install or clone this repo.
